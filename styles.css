@@ -1,0 +1,36 @@
+body{
+   margin-left: 33%;
+    background-color: rgb(73, 151, 163);
+}
+h1{
+    background-color: #900043;
+    padding: 4px 25px;
+    color: white;
+    text-align: center;
+    font-family:Arial, Helvetica, sans-serif;
+}
+form{
+    background-color: rgb(73, 151, 163) ;
+  padding: 20px;
+  width: fit-content;
+  border: 2px solid #096f7f ;
+  
+  /* height: 800px; */
+}
+textarea{
+   height: 10vh;
+}
+input[type="text"], input[type="tel"],select {
+    width: 97%;
+}
+button{
+    background-color: green;
+padding: 6px;
+    width: 100px;
+    border-radius: 8px;
+    font-weight:bolder;
+    
+}
+.buttons{
+    margin-left: 100px;
+}

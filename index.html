@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form name="myform"  action="">
+        <h1> <i> AC Maintanance Service</i></h1>
+        <table>
+            <!-- customer name -->
+            <tr>
+                <td><label for="">Customer <br> Name</label></td>
+                <td> <input type="text" placeholder="Enter your name" name="cname" id="cname"> </td>
+            </tr>
+            <!-- Mobile Number -->
+            <tr>
+                <td> <label for="">Mobile <br> Number</label></td>
+                <td> <input type="tel" name="mobname" id="" placeholder="Enter your mobile number"> </td>
+            </tr>
+            <tr>
+                <!-- Address -->
+                <td> <label for="" >Address</label> </td>
+                <td> <textarea placeholder="Enter your address" name="address" id="" cols="30" rows="10"></textarea> </td>
+            </tr>
+            <tr>
+                <!-- AC Type -->
+                <td> <label for="">AC Type</label></td>
+                <td>
+                    <select name="ac" id="options">
+                        <option id="split" name="split" value="split">Split</option>
+                        <option id="window" name="window" value="window">Window</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <!-- Service type -->
+                <td> <label for="service">Service <br> Type</label></td>
+                <td>
+                    <input type="checkbox" value="500" name="cleaning" id="cleaning">
+                    <label for="cleaning">Cleaning</label>
+                    <input type="checkbox" value="750" name="refill" id="refill">
+                    <label for="refill">Gas Refill</label>
+                    <input type="checkbox" value="250" name="filter" id="filter">
+                    <label for="filter">Filter</label>
+                </td>
+                
+                <td>
+                    <input type="checkbox" value="2500" name="repair" id="repair">
+                    <label for="repair">Repair</label>
+                    <input type="checkbox" value="1500" name="relocation" id="relocation">
+                    <label for="relocation">Relocation</label>
+                </td>
+                
+            </tr>
+            <!-- Date of appointment -->
+            <tr>
+                <td><label for=""> Date Of <br> Appointment</label></td>
+                <td> <input type="date" name="" id=""> </td>
+            </tr>
+            <!-- Yearly Maintanance -->
+            <tr>
+                <td><label for=""> Yearly <br> Maintanance</label> </td>
+                <td> 
+                    <input type="checkbox" name="req" id="req">
+                    <label for="req">Select if required</label>
+                </td>
+            </tr>
+        </table>
+        <div class="buttons">
+        <!-- Submit button -->
+        <button type="submit" onclick="validate(), acType()">Submit</button>
+        <!-- Clear button -->
+        <button>Clear</button>
+        </div>
+        <p id="text"></p>
+        <p id="text02"></p>
+    </form>
+
+</body>
+
+<!-- SCRIPT -->
+<script src="index.js"></script>
+</html>
